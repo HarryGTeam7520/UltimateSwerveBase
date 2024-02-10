@@ -2,6 +2,7 @@ package frc.robot;
 
 
 import com.ctre.phoenix6.configs.CANcoderConfiguration;
+import com.pathplanner.lib.util.HolonomicPathFollowerConfig;
 import com.revrobotics.CANSparkMax;
 
 import edu.wpi.first.math.geometry.*;
@@ -203,6 +204,7 @@ public final class Constants {
         public static final TrapezoidProfile.Constraints kThetaControllerConstraints = new TrapezoidProfile.Constraints(
                 kMaxAngularSpeedRadiansPerSecond,
                 kMaxAngularSpeedRadiansPerSecondSquared);
+        public static HolonomicPathFollowerConfig config;
     }
 
     public static final class NeoMotorConstants {
